@@ -18,16 +18,16 @@ public class ExchangeRate {
 	    
 	}
 	
-	/*@When("get the response status from the API")
-	public void get_the_response_status_from_the_api]() {
+	@When("get the response status from the API")
+	public void get_the_response_status_from_the_api() {
 		
 		responseStatus = response.getStatusCode();
 		
-	}*/
+	}
 
 	
-	@Then("validate the status of the response is {string}")
-	public void validate_the_status_of_the_response_is(String status) {
+	@Then("validate the status code of the response is {string}")
+	public void validate_the_status_code_of_the_response_is(String status) {
 	    
 		int s_code = Integer.parseInt(status);
 		Assert.assertEquals(responseStatus, s_code);
@@ -35,15 +35,15 @@ public class ExchangeRate {
 	}
 
 	
-	@When("get the response body")
-	public void get_the_response_body() {
+	@When("get the response body from the API")
+	public void get_the_response_body_from_the_api() {
 		
 		responseBody = response.getBody().asString();
 		
 	}
 
-	@Then("Verify that response body is not null")
-	public void verify_that_response_body_is_not_null() {
+	@Then("Verify the response body is not null")
+	public void verify_the_response_body_is_not_null() {
 		
 	    Assert.assertNotNull(responseBody);
 	    

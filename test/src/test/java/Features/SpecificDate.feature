@@ -1,7 +1,7 @@
 Feature: Specific Date Exchange Rates Scenario
 
 	Background: 
-	Given API for Latest Foreign Exchange rates "https://api.ratesapi.io/api/2030-10-03"
+	Given API for Latest Foreign Exchange rates "https://api.ratesapi.io/api/2030-11-12"
 	
 	Scenario: Exchange Rates Specific Date Status Code 
 		When get response status of the API

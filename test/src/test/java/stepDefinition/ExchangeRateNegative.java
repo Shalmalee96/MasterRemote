@@ -30,7 +30,7 @@ public class ExchangeRateNegative {
 		
 		int s_code = Integer.parseInt(status);
 		response.then().log().body();
-		Assert.assertEquals(responseStatus, s_code);
+		Assert.assertEquals(responseStatus, s_code, "Enter valid URI");
 		
 	}
 	

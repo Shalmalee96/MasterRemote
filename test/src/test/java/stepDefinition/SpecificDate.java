@@ -25,7 +25,7 @@ public class SpecificDate {
 	    
 	}
 	
-	@When("get the response status of the API")
+	@When("get response status of the API")
 	public void get_response_status_of_the_api() {
 		
 		responseStatus = response.getStatusCode();
@@ -70,7 +70,6 @@ public class SpecificDate {
 	    Date currDate = new Date();
 	    SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd"); 
 	    String curr = sdf.format(currDate);
-	    System.out.println("When we are extracting data for future date - 2030-11-06 , we will get the data of current date");
 	    Assert.assertNotEquals(curr,date) ;
 	    
 	}
